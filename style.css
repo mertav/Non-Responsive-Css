@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Open+Sans:ital,wght@1,500&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+body {
+    overflow-x:hidden;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 165px;
+    z-index: 9999;
+}
+
+/* Header Section */
+
+header{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    background-color: #D9BB63;
+    text-decoration: none;
+    align-items: center;
+    transition: all ease 0.5s;
+    z-index: 999;
+    border-bottom: 1.5px solid #D9BB63;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+
+nav , .logo{
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 3rem;
+    font-size: x-large;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    border-bottom: 0.1rem solid transparent;
+    transition: 0.1s padding ease;
+}
+
+.nav1 ul li{
+    padding-left: 2rem;
+}
+.nav2 ul li {
+    padding-left: 1.3rem;
+    
+}
+header:hover nav li a{
+    color:black;
+}
+
+
+header:hover {
+    background-color: #fff;
+    border-bottom: 1.5px solid black ;
+
+}
+
+
+nav ul li a:hover{
+    border-bottom:0.2rem solid;
+    border-radius: 8px;
+    border-color:  black;
+    padding-bottom: 0.5rem;
+}
+/* Header Section End */
+
+/* ------------------------------------- */
+
+/* Main Section Start */
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main .box{
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 0.8s;
+}
+
+
+main .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .box:hover{
+    width: 200%;
+}  
+
+main .box .text {
+    position: absolute;
+    left: 0;
+    bottom:-50px;
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px 100px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    text-shadow: -6px 1px 6px rgba(140, 144, 154, 1);
+    opacity: 0;
+    transition: all ease 0.4s 0.2s;
+}
+main .box .text h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    cursor: default;
+}
+main .box .text .text-inner a{
+    text-decoration:none;
+    font-size: 1.2rem;
+    color:#fff;
+    
+}
+main .box:hover .text{
+    opacity: 1;
+    bottom:0;
+    
+}
+main .box .text a span {
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: all ease 0.2s;
+}
+
+main .box .text a:hover span{
+    transform: rotate(360deg);
+}
+/* Main Section End */
